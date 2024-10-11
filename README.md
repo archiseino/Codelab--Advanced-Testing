@@ -3,6 +3,10 @@ TO-DO Notes - Code for 5.1-5.3 Testing Codelab
 
 Code for the Advanced Android Kotlin Testing Codelab 5.1-5.3
 
+Build Config Setup
+------------------
+For whoever tried to download from original repo, try to downgrade the gradle into the old version one (in this case the gradle 7.4.2) to sync the project. Next, you can use the AGP Upgrade Assistant, to update to the latest or stable one.
+
 Introduction
 ------------
 
