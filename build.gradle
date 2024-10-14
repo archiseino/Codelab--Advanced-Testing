@@ -1,12 +1,12 @@
 buildscript {
-    ext.kotlinVersion = '1.6.21'
-    ext.navigationVersion = '2.4.1'
+    ext.kotlinVersion = '1.9.24'
+    ext.navigationVersion = '2.5.0'
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.0.1'
+        classpath 'com.android.tools.build:gradle:8.3.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
 
@@ -25,9 +25,9 @@ allprojects {
 // Define versions in a single place
 ext {
     // Sdk and tools
-    minSdkVersion = 21
-    targetSdkVersion = 31
-    compileSdkVersion = 31
+    minSdkVersion = 24
+    targetSdkVersion = 34
+    compileSdkVersion = 34
 
     // App dependencies
     androidXVersion = '1.0.0'
@@ -44,8 +44,9 @@ ext {
     junitVersion = '4.13.2'
     materialVersion = '1.4.0'
     recyclerViewVersion = '1.2.1'
-    roomVersion = '2.3.0'
+    roomVersion = '2.6.1'
     rulesVersion = '1.0.1'
     swipeRefreshLayoutVersion = '1.1.0'
     timberVersion = '4.7.1'
+    hamcrestVersion = "2.2"
 }

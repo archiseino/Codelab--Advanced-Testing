@@ -5,7 +5,12 @@ Code for the Advanced Android Kotlin Testing Codelab 5.1-5.3
 
 Build Config Setup
 ------------------
-For whoever tried to download from original repo, try to downgrade the gradle into the old version one (in this case the gradle 7.4.2) to sync the project. Next, you can use the AGP Upgrade Assistant, to update to the latest or stable one.
+For whoever tried to download from original repo, try to downgrade the gradle into the old version one (in this case the gradle 7.4.2) to sync the project. Next, you can use the AGP Upgrade Assistant, to update to the latest or stable one. 
+
+I think by default the Java version of Compilation will be around Java 8 which is not suitable for the Gradle 8.xx. Try to change the Java Compilation and also try to update the Kotlin version and some important dependencies.
+
+Also note, for older dependencies, sometimes when building process, it will throw non-sense error, but try some simple solution just upgrade the dependencies related to the error to the latest or stable one.
+
 
 Introduction
 ------------
