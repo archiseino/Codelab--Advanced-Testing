@@ -11,6 +11,7 @@ I think by default the Java version of Compilation will be around Java 8 which i
 
 Also note, for older dependencies, sometimes when building process, it will throw non-sense error, but try some simple solution just upgrade the dependencies related to the error to the latest or stable one.
 
+Also run the test with the Gradle, the JUnit was trash for running test. 
 
 Introduction
 ------------

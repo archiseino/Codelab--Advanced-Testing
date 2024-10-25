@@ -30,11 +30,18 @@ android {
         jvmTarget = "17"
     }
 
+    testOptions.unitTests {
+        includeAndroidResources = true
+    }
+
     dataBinding {
         enabled = true
         enabledForTests = true
     }
     namespace 'com.example.android.architecture.blueprints.todoapp'
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {
@@ -50,7 +57,9 @@ dependencies {
 
     // Architecture Components
     implementation "androidx.room:room-runtime:$roomVersion"
-    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.ar:core:1.46.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.arch.core:core-testing:2.2.0'
     kapt "androidx.room:room-compiler:$roomVersion"
     implementation "androidx.room:room-ktx:$roomVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$archLifecycleVersion"
@@ -65,7 +74,6 @@ dependencies {
     testImplementation "junit:junit:$junitVersion"
     testImplementation "org.hamcrest:hamcrest:$hamcrestVersion"
 
-
     // AndroidX Test - Instrumented testing
     androidTestImplementation "androidx.test.ext:junit:$androidXTestExtKotlinRunnerVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
@@ -73,4 +81,14 @@ dependencies {
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     implementation "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
+
+    // AndroidX Test - JVM testing
+    testImplementation "androidx.test.ext:junit-ktx:$androidXTestExtKotlinRunnerVersion"
+
+    testImplementation "androidx.test:core-ktx:$androidXTestCoreVersion"
+
+    testImplementation "org.robolectric:robolectric:$robolectricVersion"
+
+    testImplementation "androidx.arch.core:core-testing:$archTestingVersion"
+
 }
