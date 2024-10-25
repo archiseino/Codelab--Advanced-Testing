@@ -1,0 +1,10 @@
+- Since the launchFragment and espresso are not working that much, we will back later.
+- For testing purpose, you need to ensure that the code run in synchronously.
+- In Kotlin, a common mechanism for running code asynchronously is coroutines. When testing asynchronous code, you need to make your code deterministic and provide synchronization mechanisms. The following classes and methodologies help with that:
+- Using runBlockingTest or runBlocking.
+- Using TestCoroutineDispatcher for local tests.
+- Pausing coroutine execution to test the state of the code at an exact place in time.
+- Use runTest for coroutine testing as it’s the improved, recommended alternative to runBlockingTest, offering better virtual time control and compatibility with complex coroutine setups.
+- All coroutine require a `CoroutineScope`
+- viewModelScope is a CoroutineScope associated with each view model. viewModelScope is configured for use in that particular ViewModel.
+- `TestCoroutineDispatcher` is a coroutine dispatacher meant for testing.
