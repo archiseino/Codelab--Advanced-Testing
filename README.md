@@ -24,6 +24,9 @@ For physical device, there's something odd with the Xiaomi device, you need to e
 
 > At least testing is doable this way but of course it's not normal behaviour and should at the very least be documented.
 
+This more like the system issue rather than Kotlin one as per docs:
+[https://stackoverflow.com/questions/59645936/displaying-popup-windows-while-running-in-the-background](https://stackoverflow.com/questions/59645936/displaying-popup-windows-while-running-in-the-background)
+
 
 
 Introduction
