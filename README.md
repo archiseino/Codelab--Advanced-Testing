@@ -13,6 +13,19 @@ Also note, for older dependencies, sometimes when building process, it will thro
 
 Also run the test with the Gradle, the JUnit was trash for running test. The Fragment UI Testing is somehow is not working, It won't launch the fragment and perform the UI Testing. I don't know why.
 
+Run The Test
+------------------
+For physical device, there's something odd with the Xiaomi device, you need to enable the "Display pop-up windows while running in the background" special permission after installing the app since it was resetted, as was present in here quotes
+ 
+> I've been hitting my head on the wall for a few days on this. Try to enable the "Display pop-up windows while running in the background" special permission for your normal apk(not the .test apk).
+> The first run will fail as permissions are reset each time.
+
+> Microbenchmarks probably work fine because they don't need to launch an activity(just like standard unit tests)
+
+> At least testing is doable this way but of course it's not normal behaviour and should at the very least be documented.
+
+
+
 Introduction
 ------------
 
